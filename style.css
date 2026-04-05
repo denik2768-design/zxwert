@@ -1,0 +1,107 @@
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #b7ecf0;
+  text-align: center;
+}
+
+
+h1 {
+  color: darkblue;
+  text-transform: uppercase;
+}
+
+
+.about {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+.rpg-stats {
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progress-bar {
+  background: #444;
+  height: 20px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+}
+
+/* Навички */
+.creative {
+  width: 80%;
+  background: #f39c12;
+  animation: fillUp 1s ease-out; 
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.logic {
+  width: 70%;
+  background: #3498db;
+  animation: fillUp 1s ease-out; 
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.strength {
+  width: 90%;
+  background: #e74c3c;
+  animation: fillUp 1s ease-out; 
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.magic {
+  width: 75%;
+  background: #9b59b6;
+  animation: fillUp 1s ease-out; 
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.luck {
+  width: 50%;
+  background: #f1c40f;
+  animation: fillUp 1s ease-out; 
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fillUp {
+  0% { 
+    width: 0%; 
+  }
+}
